@@ -1,0 +1,43 @@
+body.show-mobile-menu main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: height 0s;
+}
+
+body.show-mobile-menu .mobile-menu {
+  height: 100vh;
+  transition: height 0.3s;
+}
+
+.mobile-menu a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.mobile-menu a:hover {
+  color: #d19d64
+}
+
+.mobile-menu a.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+}
